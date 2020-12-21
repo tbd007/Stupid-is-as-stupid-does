@@ -1,6 +1,7 @@
 .mainheader {
 	height: 70vh;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background: linear-gradient(rgba(53, 53, 53, 0.767), rgba(54, 54, 54, 0.897)),
@@ -12,6 +13,24 @@
 
 body {
 	background-color: rgb(24, 24, 24);
+}
+
+button {
+	background: rgba(46, 46, 46, 0.833);
+	box-shadow: inset 5px -5px 10px rgba(58, 58, 58, 0.623),
+		inset -5px 5px 10px rgb(31, 30, 30);
+	color: rgba(255, 255, 255, 0.651);
+	padding: 10px 20px;
+	border-radius: 0px;
+	border: none;
+	font-family: "Nunito";
+	margin-right: 2px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+button:hover {
+	color: rgb(109, 206, 157);
 }
 
 #forrest {
@@ -29,6 +48,19 @@ h1 {
 	font-size: 90px;
 }
 
+h2 {
+	color: white;
+	margin-left: 10px;
+	text-shadow: 3px 3px 10px black;
+	font-family: "Nunito";
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+}
+
 .blur {
 	background: linear-gradient(
 		to top,
@@ -42,4 +74,207 @@ h1 {
 	height: 70px;
 	margin-top: -52px;
 	z-index: 2;
+}
+
+.card {
+	width: 385px !important;
+	height: 205px;
+	margin-right: 5px;
+}
+
+iframe:hover {
+	transform: scale(1.05);
+	transition: all 0.5s ease-in-out;
+}
+
+iframe {
+	width: 380px !important;
+	height: 200px;
+}
+.cat1,
+.cat2 {
+	display: flex;
+	flex-direction: row;
+	overflow-x: scroll;
+	margin-bottom: 30px;
+}
+
+.textcard {
+	width: 380px !important;
+	height: 200px;
+	margin-right: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#t1 {
+	background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.541)),
+		url("1_QeXv-s8RXdDm9gwengYXVw.jpeg");
+	background-size: cover;
+}
+
+#t2 {
+	background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.541)),
+		url("howdoichangemycareer.jpg");
+	background-size: cover;
+}
+
+#t3 {
+	background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.541)),
+		url("Blog_41-tech-jobs.jpg.webp");
+	background-size: cover;
+}
+
+#t4 {
+	background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.541)),
+		url("duck-in-water.jpg");
+	background-size: cover;
+}
+
+#t5 {
+	background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.541)),
+		url("image.jpg");
+	background-size: cover;
+}
+
+#t6 {
+	background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.541)),
+		url("career_options_job_choice_maze-647x960.webp");
+	background-size: cover;
+}
+
+#t7 {
+	background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.541)),
+		url("switch-career-paths.jpg");
+	background-size: cover;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #2e2e2e;
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgb(109, 206, 157);
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+p {
+	font-size: 16px;
+	font-family: "Nunito";
+}
+
+.story {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 5px;
+}
+
+.gallery {
+	display: grid;
+	grid-template-rows: 200px 250px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+		"one two two three"
+		"one two two four";
+	grid-gap: 10px;
+	width: 60vw;
+}
+
+#one {
+	grid-area: one;
+	background-image: url("career_options_job_choice_maze-647x960.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#two {
+	grid-area: two;
+	background-image: url("Stupid-Is-As-Stupid-Does-T-Shirt-display.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#three {
+	grid-area: three;
+	background-image: url("willjohnson.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#four {
+	grid-area: four;
+	background-image: url("duck-in-water.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#logo {
+	position: fixed;
+	top: 0%;
+	left: 1%;
+	box-shadow: inset 5px -5px 10px rgba(58, 58, 58, 0.623),
+		inset -5px 5px 10px rgb(31, 30, 30);
+	padding: 10px 15px;
+	background: rgb(44, 44, 44);
+	border-radius: 0px 25px 0px 25px;
+}
+
+.roadmaps {
+	background: linear-gradient(rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0.432)),
+		url("unnamed.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 400px;
+	position: relative;
+	margin: 70px auto;
+	width: 90vw;
+	box-shadow: inset 5px -5px 10px rgba(58, 58, 58, 0.623),
+		inset -5px 5px 10px rgb(31, 30, 30);
+}
+
+#roadbtn1 {
+	position: absolute;
+	top: 15%;
+	left: 80%;
+}
+
+#roadbtn2 {
+	position: absolute;
+	top: 45%;
+	left: 30%;
+}
+
+#roadbtn3 {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+}
+#roadbtn4 {
+	position: absolute;
+	top: 65%;
+	left: 70%;
+}
+
+p {
+	color: rgba(186, 186, 186, 0.994);
+	font-family: "Nunito";
+	font-size: 17px;
 }
